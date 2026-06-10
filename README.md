@@ -46,14 +46,6 @@ If implemented, these recommendations are expected to improve campaign ROI, redu
 
 ----
 
-## Dashboard Preview
-
-![Executive Summary](dashboards/screenshots/01_executive_summary.png)
-
-![Campaign Performance](dashboards/screenshots/02_campaign_performance.png)
-
-![Customer Segmentation](dashboards/screenshots/03_segmentation.png)
-
 ## Project Structure
 
 ```
@@ -92,7 +84,7 @@ Banking-Campaign-Analytics/
 ```
 
 ## Quick Start
-
+```
 # Clone repository
 git clone https://github.com/your-username/Banking-Campaign-Analytics.git
 
