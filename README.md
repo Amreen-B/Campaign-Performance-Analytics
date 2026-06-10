@@ -1,13 +1,13 @@
-# Banking Campaign Analytics & Customer Engagement Intelligence Platform
+# Banking Marketing Campaign Analytics
 
 > **End-to-end campaign analytics project** — Python · SQL · Power BI  
 > Analysing 50,000 campaign contacts across 5 segments, 4 channels, and 5 campaigns.
 
 ---
 
-## Business Context
+## Skills Demonstrated
 
-You are a Data Analyst in the Campaign Analytics team of a retail bank modelled on HSBC. The marketing team runs five campaigns (Credit Card Upgrade, Personal Loan, Savings Account, Wealth Advisory, Insurance Cross-Sell) delivered through Email, SMS, Mobile App, and Call Centre. Your job: measure what works, find what doesn't, and give the business a clear decision.
+Python • SQL • Data Cleaning • EDA • KPI Reporting • Customer Segmentation • A/B Testing • Statistical Analysis • Funnel Analytics • CLV • RFM • Cohort Analysis • Power BI • Business Strategy
 
 ---
 
@@ -22,7 +22,37 @@ You are a Data Analyst in the Campaign Analytics team of a retail bank modelled 
 | Best channel | Email — 1,325% ROI, INR 66 CPA |
 | Funnel efficiency | 0.39% end-to-end conversion |
 
+ROI = (Revenue − Cost) / Cost × 100
+
 ---
+## Business Impact
+
+This analysis identified several opportunities to improve campaign profitability:
+
+- Reallocate budget toward Personal Loan and Wealth Advisory campaigns.
+- Shift low-performing Call Centre spend into Email and SMS channels.
+- Target Premier and Mass Affluent customers with premium products.
+- Improve subject-line strategy to reduce the largest funnel drop-off stage.
+
+If implemented, these recommendations are expected to improve campaign ROI, reduce customer acquisition costs, and increase conversions through more targeted budget allocation and customer segmentation strategies.
+
+---
+
+## Dashboard Preview
+
+| Executive Summary | Campaign Performance | Customer Segmentation |
+|-------------------|----------------------|----------------------|
+| ![](dashboards/screenshots/01_executive_summary.png) | ![](dashboards/screenshots/02_campaign_performance.png) | ![](dashboards/screenshots/03_segmentation.png) |
+
+----
+
+## Dashboard Preview
+
+![Executive Summary](dashboards/screenshots/01_executive_summary.png)
+
+![Campaign Performance](dashboards/screenshots/02_campaign_performance.png)
+
+![Customer Segmentation](dashboards/screenshots/03_segmentation.png)
 
 ## Project Structure
 
@@ -61,6 +91,18 @@ Banking-Campaign-Analytics/
     └── data_dictionary.md           # Column definitions, formulas, dataset stats
 ```
 
+## Quick Start
+
+# Clone repository
+git clone https://github.com/your-username/Banking-Campaign-Analytics.git
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run analytics pipeline
+python notebooks/Campaign_Analytics.py
+```
+
 ---
 
 ## Analyses Covered
@@ -91,31 +133,6 @@ Groups customers by account-opening year. Shows how customer vintage affects eng
 
 ### 9 · Executive KPI Dashboard
 Four KPI tiles (Revenue, ROI, Conversion Rate, Total Conversions) saved as a chart for direct use in presentations or Power BI.
-
----
-
-## Quick Start
-
-```bash
-# 1. Clone
-git clone https://github.com/YOUR_USERNAME/Banking-Campaign-Analytics.git
-cd Banking-Campaign-Analytics
-
-# 2. Install dependencies
-pip install pandas numpy scipy matplotlib seaborn
-
-# 3. Generate dataset  (already included; re-run if you want fresh data)
-python data/generate_data.py
-
-# 4. Run full analytics pipeline
-python notebooks/Campaign_Analytics.py
-# → prints all KPI tables to terminal
-# → saves 9 charts to dashboards/screenshots/
-
-# 5. Explore SQL queries
-#    Open sql/campaign_queries.sql in your preferred SQL client
-#    Compatible with BigQuery, PostgreSQL, MySQL, Redshift
-```
 
 ---
 
@@ -160,24 +177,6 @@ Full analysis in `reports/Business_Recommendations.md`.
 5. **Fix the open-stage drop-off** (71%) — subject-line A/B testing is the highest-leverage action.
 6. **Create a CLV priority track** for top-20% customers (RFM score ≥ 11).
 7. **Build an onboarding journey** for customers in their first 12 months.
-
----
-
-## Resume Bullets
-
-```
-• Built end-to-end Banking Campaign Analytics platform in Python and SQL,
-  analysing 50,000 records across 5 campaigns, 4 channels, and 5 segments
-  to identify a 397% overall ROI and surface a 35–40% conversion uplift opportunity.
-
-• Designed and executed A/B testing framework (chi-square significance testing),
-  conversion funnel analysis, RFM segmentation, and cohort analysis,
-  delivering 7 evidence-based business recommendations with quantified revenue impact.
-
-• Developed interactive Power BI dashboard (8 pages, 9 visualisations) tracking
-  open rate, CTR, conversion rate, ROI, and CLV to support data-driven
-  campaign budget allocation decisions.
-```
 
 ---
 
